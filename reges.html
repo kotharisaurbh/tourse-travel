@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>Regestration form</title>
+		<script language="javascript">
+		function f1()
+		{
+			var p = document.getElementById("psw").value;
+			var p1 = document.getElementById("psw1").value;
+			if(p == p1)
+			{
+				alert("does not match password");
+			}
+		}
+		</script>		
+	</head>
+	<body background="as1.jpg"> 
+		<center><h2> Regestration</h2>
+		<form>
+			<table>
+			   <tr>
+				   <td> First Name: 
+				<tr>   
+				   <td><input type="text" name="ftxt" placeholder="First Name" required>
+		       
+			   <tr><td><td></tr>
+			   
+			   <tr>
+				   <td> Last Name:
+				<tr>
+				<td><input type="text" name="Ltxt" placeholder="Last Name"required>
+		       
+				<tr><td><td></tr>
+			   
+			   <tr>
+				   <td> Gender:
+				<tr>
+				<td><input type="radio" name="gender" required>male
+				   <input type="radio" name="gender" required>female
+		       
+			   
+			   <tr><td><td></tr>
+			  
+			   <tr>
+				   <td>ph.no: 
+				<tr>
+				<td><input type="tel" name="ph.no" placeholder="phone no." required>
+		       
+				
+				
+				<tr><td><td></tr>
+			   
+			  <tr>
+				   <td> email: 
+				<tr>
+				<td><input type="email" name="email" placeholder="email" >
+		       
+					
+				<tr><td><td></tr>
+			   
+				<tr>
+					<td> Password: 
+				<tr>
+				<td><input type="password" id="psw" required placeholder="password">
+							
+				
+				<tr><td><td></tr>
+			   
+				<tr>
+					<td> confirm Password: 
+				<tr>
+				<td><input type="password" id="psw1" required placeholder="re-password">
+				
+			   
+			   <tr><td><td></tr>
+			   
+				<tr>
+					<td> <input type="submit" name="sub" onClick=f1()>
+					 &nbsp &nbsp <input type="Button" name="can" value="cancel">
+				</tr>
+				
+			</table>
+		</form>
+		</center>
+	</body>
+</html>
